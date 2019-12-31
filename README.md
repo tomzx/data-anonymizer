@@ -1,12 +1,16 @@
 # Data anonymizer
-
 Data anonymizer allows you to strip information from a dataset while preserving certain statistical properties. This is useful for data companies as it allows them to get access to data that is based on their clients' data without accessing the true data itself. Given that some transforms are non-reversible, the original data cannot be recovered.
 
 ## Getting started
-
+### Python
 * Clone the repository.
 * `poetry install`.
 * You can now use `data-anonymizer` as long as you are within the created virtual environment.
+
+### Docker
+* Clone the repository.
+* `docker build -t data-anonymizer .`
+* You can now use `data-anonymizer` by running `docker run --rm -it -v <mount your data> data-anonymizer <data-anonymizer arguments>`
 
 ## Example
 
