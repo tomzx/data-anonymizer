@@ -12,7 +12,7 @@ def run():
         "output", help="Path where to store the anonymized data"
     )
     argument_parser.add_argument(
-        "--feature-anonymize", nargs="+", help="Remove feature name (* to anonymze all)"
+        "--feature-anonymize", nargs="+", help="Remove feature name (* to anonymize all)"
     )
     argument_parser.add_argument(
         "--feature-binarize", nargs="+", help="Feature to binarize (either 0 or 1)"
